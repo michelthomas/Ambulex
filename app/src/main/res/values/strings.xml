@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Ambulex</string>
+
+    <string name="login_label">Login</string>
+    <string name="cadastro_label">Cadastro</string>
+    <string name="inicio_label">Início</string>
+    <string name="solicitacao_label">Solicitação</string>
+    <string name="historico_label">Histórico de solicitações</string>
+    <string name="senha">Senha</string>
+    <string name="cadastrar">Cadastre-se</string>
+    <string name="solicitar">Solicitar</string>
+
+    <!--Motivos -->
+    <string name="motivo_acidente">Acidente automobilístico</string>
+    <string name="motivo_avc">Suspeita de AVC</string>
+    <string name="motivo_engasgo">Engasgos</string>
+    <string name="motivo_queimaduras">Queimadura grave</string>
+    <string name="motivo_suicidio">Tentativa de suicídio</string>
+    <string name="motivo_convulsao">Crises convulsivas</string>
+    <string name="motivo_intoxicacao">Intoxicação ou envenenamento</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="motivo">Motivo:</string>
+    <string name="confirme_o_local">Confirme o local:</string>
+
+    <!--Geocoding-->
+    <string name="permissao_necessaria">A permissão para localização é necessária para o funcionamento.</string>
+    <string name="no_location_data_provided">Nenhum dado de localização fornecido</string>
+    <string name="service_not_available">Serviço não disponível</string>
+    <string name="invalid_lat_long_used">Dados de latitude e longitude inválidos</string>
+    <string name="no_address_found">Nenhum endereço encontrado.</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="address_found">Endereço encontrado</string>
+    <string name="no_geocoder_available">Nenhum Geocoder disponível</string>
+
+
+</resources>

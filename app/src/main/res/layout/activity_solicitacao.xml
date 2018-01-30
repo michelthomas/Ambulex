@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.michelthomas.ambulex.view.SolicitacaoActivity">
+
+    <LinearLayout
+        android:id="@+id/motivo_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/motivo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <Spinner
+            android:id="@+id/spinner_motivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/confirmacao_local_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/motivo_linear"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirme_o_local"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/local_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/confirmar_frame_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/confirmacao_local_linear"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentEnd="true">
+        <Button
+            android:id="@+id/confirmar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/cardview_light_background"
+            android:onClick="confirmarLocal"
+            android:text="@string/confirmar"/>
+    </FrameLayout>
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/motivo_solicitar_frame_button"
+        android:layout_below="@id/confirmar_frame_button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"/>
+
+    <FrameLayout
+        android:id="@+id/motivo_solicitar_frame_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/motivo_solicitar_button"
+            android:enabled="false"
+            android:text="@string/solicitar"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:onClick="solicitarAmbulancia"/>
+    </FrameLayout>
+
+</RelativeLayout>

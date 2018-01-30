@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_motivos">
+        <item>@string/motivo_acidente</item>
+        <item>@string/motivo_avc</item>
+        <item>@string/motivo_convulsao</item>
+        <item>@string/motivo_engasgo</item>
+        <item>@string/motivo_queimaduras</item>
+        <item>@string/motivo_suicidio</item>
+        <item>@string/motivo_intoxicacao</item>
+    </string-array>
+
+
+</resources>
